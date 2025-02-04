@@ -4,6 +4,7 @@ import HomeCategory from './HomeCategory.jsx';
 import CategoryShowCase from './CategoryShowCase.jsx';
 import Register from './Register.jsx';
 import LocationSprade from './LocationSprade.jsx';
+import AboutUS from './AboutUS.jsx';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
        <CategoryShowCase />
        <Register />
        <LocationSprade />
+       <AboutUS />
       
     </div>
   )
