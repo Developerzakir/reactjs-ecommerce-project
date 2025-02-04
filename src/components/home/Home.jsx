@@ -5,6 +5,7 @@ import CategoryShowCase from './CategoryShowCase.jsx';
 import Register from './Register.jsx';
 import LocationSprade from './LocationSprade.jsx';
 import AboutUS from './AboutUS.jsx';
+import AppSection from './AppSection.jsx';
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
        <Register />
        <LocationSprade />
        <AboutUS />
+       <AppSection />
       
     </div>
   )
