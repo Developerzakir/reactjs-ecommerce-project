@@ -6,6 +6,7 @@ import Register from './Register.jsx';
 import LocationSprade from './LocationSprade.jsx';
 import AboutUS from './AboutUS.jsx';
 import AppSection from './AppSection.jsx';
+import Sponsor from './Sponsor.jsx';
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
        <LocationSprade />
        <AboutUS />
        <AppSection />
+       <Sponsor />
       
     </div>
   )
