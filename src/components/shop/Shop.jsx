@@ -4,6 +4,7 @@ import Data from '../../products.json'
 import ProductCards from './ProductCards'
 import Pagination from './Pagination'
 import Search from './Search'
+import ShopCategory from './ShopCategory'
 
 const showResults = "Showing 01 - 12 of 140 Results"
 
@@ -22,6 +23,19 @@ const Shop = () => {
  //function to change the current page
  const paginate = (pageNumber)=>{
     setCurrentPage(pageNumber);
+ }
+
+ //filter product based on category
+ const [selectedCat, setSelectedCat] = useState("All");
+ const menuItems = [...new Set(Data.map((val)=>val.category))];
+
+ const filterItem = (currCat)=>{
+    const newItem = Data.filter((newVal)=>{
+        return newVal.category === currCat;
+    })
+
+    setSelectedCat(currCat);
+    setProducts(newItem);
  }
 
 
@@ -61,6 +75,13 @@ const Shop = () => {
                     <div className="col-lg-4 col-12">
                         <aside>
                             <Search products={products} gridList={gridList} />
+                            <ShopCategory 
+                              filterItem={filterItem}
+                              setItem={setProducts}
+                              menuItems={menuItems}
+                              setProducts={setProducts}
+                              selectedCat={selectedCat}
+                             />
                         </aside>
                     </div>
                 </div>
