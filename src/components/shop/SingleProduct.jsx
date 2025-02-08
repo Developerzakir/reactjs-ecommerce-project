@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import ProductDisplay from './ProductDisplay';
+import ProductReview from './ProductReview';
 
 
 
@@ -94,7 +95,7 @@ console.log(result);
                   </div>
 
                   <div className="review">
-                    review
+                    <ProductReview />
                   </div>
                 </article>
               </div>
