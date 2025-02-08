@@ -9,6 +9,8 @@ import 'swiper/css';
 import { Autoplay } from 'swiper/modules';
 import ProductDisplay from './ProductDisplay';
 import ProductReview from './ProductReview';
+import PopularPost from './PopularPost';
+import Tags from './Tags';
 
 
 
@@ -102,7 +104,10 @@ console.log(result);
 
               {/* right side start */}
               <div className="col-lg-4 col-12">
-                right side
+                <aside className='ps-lg-4'>
+                      <PopularPost />
+                      <Tags />
+                </aside>
               </div>
             </div>
           </div>
